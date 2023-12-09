@@ -5,7 +5,10 @@
 bool irrigar = false;
 
 void setup() {
+  pinMode(rele, OUTPUT);
+  pinMode(sensor, INPUT);
 
+  digitalWrite(rele, HIGH);
 }
 
 void loop() {
