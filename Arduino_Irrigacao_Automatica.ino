@@ -12,5 +12,12 @@ void setup() {
 }
 
 void loop() {
+  irrigar = digitalRead(sensor);
+  if (irrigar){
+    digitalWrite(rele, LOW);
+  }else{
+    digitalWrite(rele, HIGH);
+  }
 
+  delay(5000);
 }
